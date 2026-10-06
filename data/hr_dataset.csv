@@ -1,0 +1,221 @@
+question,candidate_answer,label
+Tell me about yourself.,hey,Mauvaise
+Tell me about yourself.,nothing,Mauvaise
+Tell me about yourself.,I don't know,Mauvaise
+Tell me about yourself.,idk,Mauvaise
+Tell me about yourself.,I am a developer.,Insuffisante
+Tell me about yourself.,I work in IT.,Insuffisante
+Tell me about yourself.,I'm an engineer.,Insuffisante
+Tell me about yourself.,I have a job.,Insuffisante
+Tell me about yourself.,I'm a software engineer with 2 years of experience.,Moyenne
+Tell me about yourself.,I work as a developer mainly in Java.,Moyenne
+Tell me about yourself.,I'm a backend developer with experience in Spring Boot.,Moyenne
+Tell me about yourself.,I've been working in software development for 3 years.,Moyenne
+Tell me about yourself.,"Hi, I'm Alex. I'm a software engineer with 5 years of experience in Java, Spring Boot, and PostgreSQL.",Bonne
+Tell me about yourself.,I'm a backend developer with 4 years of experience. I've worked on REST APIs and microservices.,Bonne
+Tell me about yourself.,"I'm a software engineer specializing in backend development. I've built APIs, worked with SQL, and improved system performance.",Bonne
+Tell me about yourself.,I have 5 years of experience in backend development. I've worked on scalable systems and led small projects.,Bonne
+Tell me about yourself.,"Hi, I'm Alex. I'm a software engineer with 5 years of experience specializing in backend development with Java, Spring Boot, and PostgreSQL. I led a team of 3 developers on a microservices migration that reduced latency by 40%. I'm passionate about clean architecture and mentoring junior developers.",Excellente
+Tell me about yourself.,"Hi, I'm Alex. I've been a backend engineer for 6 years, specializing in Java, Spring Boot, PostgreSQL, and Kafka. I designed a real-time event-driven system that processes 100K events per second. I mentor 2 junior developers and lead code reviews. I'm currently learning Kubernetes and distributed systems.",Excellente
+Tell me about yourself.,"I'm a senior software engineer with 7 years of experience in backend development, cloud architecture, and team leadership. At my last job, I architected a microservices migration that cut infrastructure costs by 30% and improved deployment frequency by 5x.",Excellente
+Tell me about yourself.,"Hello, I'm Alex. I have 5 years of backend engineering experience with a strong focus on Java, Spring Boot, and cloud-native architectures. I led the migration of a monolith to microservices, reducing latency by 40%. I've mentored 4 junior developers.",Excellente
+Why are you interested in this position?,I need a job,Mauvaise
+Why are you interested in this position?,money,Mauvaise
+Why are you interested in this position?,don't know,Mauvaise
+Why are you interested in this position?,because,Mauvaise
+Why are you interested in this position?,I like the company.,Insuffisante
+Why are you interested in this position?,It's a good job.,Insuffisante
+Why are you interested in this position?,The salary looks good.,Insuffisante
+Why are you interested in this position?,It's close to my home.,Insuffisante
+Why are you interested in this position?,It matches my skills.,Moyenne
+Why are you interested in this position?,I want to work with new technologies.,Moyenne
+Why are you interested in this position?,The role seems interesting for my career.,Moyenne
+Why are you interested in this position?,I like your products and I want to contribute.,Moyenne
+Why are you interested in this position?,Your company is a leader in the industry and I admire your recent projects. My skills in backend development match this position.,Bonne
+Why are you interested in this position?,I've been following your company for a while. Your work on cloud infrastructure aligns with my experience in backend and DevOps.,Bonne
+Why are you interested in this position?,This position matches my 5 years of experience in backend development and I want to work on larger-scale systems.,Bonne
+Why are you interested in this position?,I'm excited about your product roadmap and I believe my technical skills would contribute to your team.,Bonne
+Why are you interested in this position?,I've been following your company's growth in the cloud sector for 2 years. Your recent migration to microservices aligns perfectly with my 5 years of backend experience. I'm particularly excited about your open-source contributions and I'd love to bring my expertise in distributed systems to your team.,Excellente
+Why are you interested in this position?,"Your company's mission to simplify payments for small businesses resonates with me. I have 6 years of backend experience, including 3 at a fintech startup, and I'd love to apply my knowledge of scalable payment systems to your platform.",Excellente
+Why are you interested in this position?,"I'm looking for a role where I can grow technically and contribute to meaningful projects. Your company's focus on innovation, combined with the chance to work with Kubernetes and event-driven architectures, is exactly what I'm seeking after 5 years in backend development.",Excellente
+Why are you interested in this position?,I've admired your engineering blog for years. The way your team approached the migration to event-driven architecture inspired me to specialize in Kafka and stream processing. I'd love to contribute to your platform at this exciting growth stage.,Excellente
+What are your strengths?,nothing,Mauvaise
+What are your strengths?,I don't know,Mauvaise
+What are your strengths?,I'm good,Mauvaise
+What are your strengths?,everything,Mauvaise
+What are your strengths?,I work hard.,Insuffisante
+What are your strengths?,I'm a fast learner.,Insuffisante
+What are your strengths?,I'm organized.,Insuffisante
+What are your strengths?,I'm motivated.,Insuffisante
+What are your strengths?,I'm good at coding and I learn fast.,Moyenne
+What are your strengths?,I work well in teams and I can handle pressure.,Moyenne
+What are your strengths?,I'm a problem solver and I'm good with Java.,Moyenne
+What are your strengths?,I'm autonomous and I like learning new technologies.,Moyenne
+What are your strengths?,"My main strength is problem-solving. In my last project, I diagnosed a performance issue and optimized our API response time by 30%.",Bonne
+What are your strengths?,"I'm good at breaking down complex problems. I led the redesign of our authentication system, which improved security and reduced login time by 50%.",Bonne
+What are your strengths?,"I learn fast and adapt easily. When we switched from a monolith to microservices, I picked up Kubernetes in 2 weeks and helped my team migrate.",Bonne
+What are your strengths?,I'm a strong communicator. I've mentored 3 junior developers and regularly present technical topics to non-technical stakeholders.,Bonne
+What are your strengths?,"My main strength is system design. In my last role, I designed a real-time event processing pipeline that handles 100K events per second with sub-100ms latency. I combined Kafka, Flink, and PostgreSQL to build a system that scaled 10x without major changes.",Excellente
+What are your strengths?,"I'm a fast learner with strong fundamentals. When my company adopted Kubernetes, I became the go-to person within a month and trained 5 colleagues. I learn best by building real projects, which is why I always have a side project running.",Excellente
+What are your strengths?,"My biggest strength is turning ambiguous problems into clear technical plans. Last year, our VP asked me to reduce infrastructure costs. I led an 8-week project that cut our AWS bill by 40% by right-sizing instances, moving to spot instances, and improving our caching strategy.",Excellente
+What are your strengths?,"I combine strong technical skills with excellent communication. I've led cross-functional projects involving backend, frontend, and product teams. My ability to explain complex technical trade-offs to non-engineers helped us align on architecture decisions and ship 2 weeks ahead of schedule.",Excellente
+What are your weaknesses?,nothing,Mauvaise
+What are your weaknesses?,I don't have any,Mauvaise
+What are your weaknesses?,I'm perfect,Mauvaise
+What are your weaknesses?,none,Mauvaise
+What are your weaknesses?,I work too much.,Insuffisante
+What are your weaknesses?,I'm a perfectionist.,Insuffisante
+What are your weaknesses?,I'm shy.,Insuffisante
+What are your weaknesses?,I don't like meetings.,Insuffisante
+What are your weaknesses?,"I can be too focused on details sometimes, but I'm working on it.",Moyenne
+What are your weaknesses?,"I sometimes take on too much work, but I've learned to delegate.",Moyenne
+What are your weaknesses?,"Public speaking is hard for me, but I've been practicing.",Moyenne
+What are your weaknesses?,"I get impatient with slow processes, but I've learned to be more patient.",Moyenne
+What are your weaknesses?,"I've historically been too focused on code quality at the expense of deadlines. In my last project, I learned to balance both by setting clear 'good enough' criteria early. This helped me ship features 20% faster without sacrificing quality.",Bonne
+What are your weaknesses?,"Public speaking used to be hard. I joined a local Toastmasters club, and last month I gave a 30-minute tech talk to 50 people. I'm still learning but I've improved significantly.",Bonne
+What are your weaknesses?,I sometimes take on too much work because I want to help everyone. I've learned to say no more often and to delegate when appropriate. My team has actually benefited from this change.,Bonne
+What are your weaknesses?,I've always been a bit impatient with legacy code. I've learned to value it by understanding its history and constraints. Now I document improvements and propose changes carefully instead of rushing.,Bonne
+What are your weaknesses?,"Historically, I struggled with delegating because I wanted everything done 'my way'. Through mentorship and leading a team of 4, I've learned that different approaches can be equally valid. I now focus on outcomes rather than specific implementations, which has improved both team morale and delivery speed.",Excellente
+What are your weaknesses?,"I used to avoid conflict and would let technical disagreements drag on. After a project suffered from this, I took a course on difficult conversations. Now I address disagreements early and directly, focusing on data rather than opinions. It's been transformative for my team's efficiency.",Excellente
+What are your weaknesses?,I have a tendency to go deep on technical problems even when a simpler solution would suffice. I've learned to timebox my investigations and ask myself 'what's the simplest thing that could work?' before diving in. This has cut my average feature delivery time significantly.,Excellente
+What are your weaknesses?,"In the past, I underestimated the importance of documentation and testing. After inheriting an undocumented codebase early in my career, I now write docs and tests as I code, not after. This discipline has saved my teams weeks of debugging over the years.",Excellente
+Where do you see yourself in 5 years?,I don't know,Mauvaise
+Where do you see yourself in 5 years?,somewhere,Mauvaise
+Where do you see yourself in 5 years?,in 5 years,Mauvaise
+Where do you see yourself in 5 years?,not sure,Mauvaise
+Where do you see yourself in 5 years?,I want a better job.,Insuffisante
+Where do you see yourself in 5 years?,I want to be a manager.,Insuffisante
+Where do you see yourself in 5 years?,I want to earn more.,Insuffisante
+Where do you see yourself in 5 years?,I want to stay in the same role.,Insuffisante
+Where do you see yourself in 5 years?,I want to grow in my career.,Moyenne
+Where do you see yourself in 5 years?,I want to become a senior developer.,Moyenne
+Where do you see yourself in 5 years?,I hope to have more responsibilities.,Moyenne
+Where do you see yourself in 5 years?,I want to work on bigger projects.,Moyenne
+Where do you see yourself in 5 years?,I want to grow into a senior role where I can lead technical projects and mentor junior developers.,Bonne
+Where do you see yourself in 5 years?,I'd like to specialize in distributed systems and contribute to open-source projects.,Bonne
+Where do you see yourself in 5 years?,I hope to be a tech lead with strong expertise in backend architecture.,Bonne
+Where do you see yourself in 5 years?,I want to transition into an engineering manager role after deepening my technical expertise.,Bonne
+Where do you see yourself in 5 years?,"In 5 years, I'd like to be a tech lead or staff engineer, known for designing scalable systems. I want to have mentored 5-10 developers and contributed to open-source projects in the distributed systems space.",Excellente
+Where do you see yourself in 5 years?,"I see myself as a senior engineer or engineering manager, having grown both technically and as a leader. I want to be the person my team turns to for architectural decisions and to have shipped products that impact millions of users.",Excellente
+Where do you see yourself in 5 years?,"My goal is to become a staff engineer specializing in distributed systems. I want to lead cross-team architectural initiatives, publish technical articles, and speak at conferences. I also want to continue mentoring junior developers.",Excellente
+Where do you see yourself in 5 years?,"I aim to grow into a tech lead role where I combine deep technical expertise with team leadership. I want to have designed systems used by millions, mentored a team of developers, and contributed to open-source projects that advance the industry.",Excellente
+Why should we hire you?,because I need a job,Mauvaise
+Why should we hire you?,I'm the best,Mauvaise
+Why should we hire you?,I don't know,Mauvaise
+Why should we hire you?,because,Mauvaise
+Why should we hire you?,I'm a hard worker.,Insuffisante
+Why should we hire you?,I'm motivated and I learn fast.,Insuffisante
+Why should we hire you?,I have experience.,Insuffisante
+Why should we hire you?,I'm available immediately.,Insuffisante
+Why should we hire you?,I have the skills you're looking for.,Moyenne
+Why should we hire you?,I match the job description and I'm motivated.,Moyenne
+Why should we hire you?,I have 3 years of experience in backend development.,Moyenne
+Why should we hire you?,I'm a good fit for the team and I can learn quickly.,Moyenne
+Why should we hire you?,I have 5 years of backend experience with Java and Spring Boot. I've delivered several production systems and I'm confident I can contribute to your team from day one.,Bonne
+Why should we hire you?,"My technical skills match this role, and I bring strong problem-solving abilities. I've worked in similar environments and I'm ready to make an impact quickly.",Bonne
+Why should we hire you?,I combine technical expertise with strong communication. I've mentored juniors and led projects. I believe I can add value to both your product and your team culture.,Bonne
+Why should we hire you?,I have exactly the skills you need and a proven track record of delivering complex projects on time. I'm also passionate about learning and growing with the company.,Bonne
+Why should we hire you?,"My 5 years of backend experience, combined with my track record of delivering scalable systems (I designed a system handling 100K events/sec), match your requirements. I also bring strong collaboration skills — I've mentored 4 developers and led cross-team projects. I'm confident I can contribute from day one.",Excellente
+Why should we hire you?,"Beyond my technical skills (Java, Spring Boot, Kubernetes, Kafka), I bring a rare combination of execution speed and code quality. In my last role, I shipped features 30% faster than the team average while maintaining 90%+ test coverage. I'd bring the same rigor here.",Excellente
+Why should we hire you?,"I don't just fill a role — I elevate teams. My technical depth (distributed systems, event-driven architecture) and my mentorship experience (I've grown 3 junior engineers into mid-levels) make me a multiplier. Your team would benefit both from my code and from my leadership.",Excellente
+Why should we hire you?,"I bring 6 years of backend expertise, but what sets me apart is my product mindset. I've worked closely with product teams, understood user needs, and translated them into technical solutions. This ensures that what I build actually solves real problems, not just technical ones.",Excellente
+Tell me about a challenge you overcame.,nothing,Mauvaise
+Tell me about a challenge you overcame.,no challenges,Mauvaise
+Tell me about a challenge you overcame.,I don't remember,Mauvaise
+Tell me about a challenge you overcame.,idk,Mauvaise
+Tell me about a challenge you overcame.,I had a bug once.,Insuffisante
+Tell me about a challenge you overcame.,It was hard.,Insuffisante
+Tell me about a challenge you overcame.,I worked a lot.,Insuffisante
+Tell me about a challenge you overcame.,It took time.,Insuffisante
+Tell me about a challenge you overcame.,We had a production issue and I fixed it.,Moyenne
+Tell me about a challenge you overcame.,I had to learn a new technology quickly.,Moyenne
+Tell me about a challenge you overcame.,I had to meet a tight deadline.,Moyenne
+Tell me about a challenge you overcame.,I had a conflict with a colleague and we resolved it.,Moyenne
+Tell me about a challenge you overcame.,"In my last project, we had a performance problem in production. I analyzed the logs, identified a slow SQL query, and optimized it. Response time dropped from 2s to 200ms, improving user experience significantly.",Bonne
+Tell me about a challenge you overcame.,"We had to migrate from a monolith to microservices in 3 months. I designed the migration plan, led the backend team, and we shipped on time. The system now scales 10x better.",Bonne
+Tell me about a challenge you overcame.,"We had a critical production bug that affected all users. I stayed calm, led the incident response, and we fixed it in 2 hours. I then wrote a post-mortem that prevented similar issues.",Bonne
+Tell me about a challenge you overcame.,"I had to learn Kubernetes in 2 weeks to lead a migration. I studied at night, built a small project, and successfully led the migration. The team now uses Kubernetes for all deployments.",Bonne
+Tell me about a challenge you overcame.,"Our API was timing out under high load. I led a deep investigation, found that our database queries were not indexed properly, and designed a caching layer with Redis. Response times dropped by 90% and we handled 5x more traffic with the same infrastructure.",Excellente
+Tell me about a challenge you overcame.,"When I joined, our deployment process took 4 hours with 2 hours of manual work. I designed a CI/CD pipeline using GitHub Actions and Docker. Deployments now take 15 minutes, fully automated. This freed 30 engineer-hours per week for actual development.",Excellente
+Tell me about a challenge you overcame.,"During Black Friday, our system hit 10x normal load and crashed. I coordinated the incident response, led the technical investigation, and designed a horizontal scaling solution using Kubernetes. The next year, we handled 15x load without issues.",Excellente
+Tell me about a challenge you overcame.,"We had a cross-team disagreement between backend and data science on model deployment. I organized a workshop, mapped each team's constraints, and designed a hybrid solution: batch processing for heavy models, real-time for lightweight ones. This unblocked both teams and shipped 2 weeks early.",Excellente
+How do you handle stress and pressure?,I don't,Mauvaise
+How do you handle stress and pressure?,I panic,Mauvaise
+How do you handle stress and pressure?,I don't know,Mauvaise
+How do you handle stress and pressure?,badly,Mauvaise
+How do you handle stress and pressure?,I try to stay calm.,Insuffisante
+How do you handle stress and pressure?,I work harder.,Insuffisante
+How do you handle stress and pressure?,I take breaks.,Insuffisante
+How do you handle stress and pressure?,I talk to my manager.,Insuffisante
+How do you handle stress and pressure?,I prioritize my tasks and take deep breaths.,Moyenne
+How do you handle stress and pressure?,I make a list and focus on the most important thing first.,Moyenne
+How do you handle stress and pressure?,I try to stay organized and communicate with my team.,Moyenne
+How do you handle stress and pressure?,I keep a positive mindset and I don't let pressure affect my work.,Moyenne
+How do you handle stress and pressure?,"I stay calm and prioritize. When we had a production outage, I focused on the fix first, then on the root cause. This prevented panic and helped the team.",Bonne
+How do you handle stress and pressure?,"I break down the problem and focus on what I can control. During tight deadlines, I communicate early with stakeholders to align on scope.",Bonne
+How do you handle stress and pressure?,"I've learned to disconnect when needed. During high-pressure weeks, I make sure to sleep well, exercise, and take short breaks. This keeps me productive.",Bonne
+How do you handle stress and pressure?,"I use a mix of organization and mindfulness. I plan my week, prioritize tasks, and when stress hits, I remind myself that most problems are solvable. I also reach out to my team when needed.",Bonne
+How do you handle stress and pressure?,"During a critical outage that lasted 6 hours, I stayed focused by breaking the problem into small, testable steps. I communicated status updates every 30 minutes to stakeholders, which reduced anxiety on both sides. After the fix, I led a post-mortem to prevent recurrence.",Excellente
+How do you handle stress and pressure?,"I've built systems to manage pressure long-term. I exercise 4x a week, journal, and set clear boundaries between work and personal life. During a 3-month high-stakes project, this routine kept me productive and prevented burnout.",Excellente
+How do you handle stress and pressure?,"I see pressure as information. When I feel stressed, I ask: what exactly is worrying me? Often it's a small, solvable thing. I then break it down and tackle the first step. This method has helped me lead incident responses calmly.",Excellente
+How do you handle stress and pressure?,"I combine short-term techniques (deep breathing, prioritizing) with long-term habits (sleep, exercise, boundaries). I also communicate openly with my team when things get tough, which reduces stress for everyone. In my last role, I mentored 2 juniors on stress management.",Excellente
+Describe a time you worked in a team.,never,Mauvaise
+Describe a time you worked in a team.,I don't like teams,Mauvaise
+Describe a time you worked in a team.,I prefer alone,Mauvaise
+Describe a time you worked in a team.,idk,Mauvaise
+Describe a time you worked in a team.,I worked in a team.,Insuffisante
+Describe a time you worked in a team.,We did a project.,Insuffisante
+Describe a time you worked in a team.,It was fine.,Insuffisante
+Describe a time you worked in a team.,We worked together.,Insuffisante
+Describe a time you worked in a team.,I worked on a team of 3 developers on a web project.,Moyenne
+Describe a time you worked in a team.,We used Git and had daily meetings.,Moyenne
+Describe a time you worked in a team.,I contributed to the backend of a team project.,Moyenne
+Describe a time you worked in a team.,We collaborated on a REST API and shared tasks.,Moyenne
+Describe a time you worked in a team.,I worked in a team of 5 developers on a microservices migration. I handled 3 services and coordinated with the frontend team. We shipped on time and the system was 3x faster.,Bonne
+Describe a time you worked in a team.,"I collaborated with 2 backend developers and a QA on a payment system. I designed the API contract, wrote tests, and reviewed PRs. The system is used by 100K users.",Bonne
+Describe a time you worked in a team.,"I led a cross-functional team of 4 (backend, frontend, design, QA) to launch a new feature. I coordinated sprints, unblocked teammates, and we delivered 1 week early.",Bonne
+Describe a time you worked in a team.,I worked with 3 engineers on a legacy migration. I proposed a phased approach that reduced risk. We migrated successfully with zero downtime over 2 months.,Bonne
+Describe a time you worked in a team.,"I led a team of 4 developers to migrate a monolith to microservices. I designed the architecture, split the work, and mentored 2 juniors on the new stack. We migrated 100% of the traffic in 3 months with zero downtime and 5x performance improvement.",Excellente
+Describe a time you worked in a team.,"I was tech lead for a cross-team project involving backend, frontend, and data science. I established clear interfaces, ran weekly syncs, and resolved conflicts between teams. We shipped a personalization engine that increased conversion by 25%.",Excellente
+Describe a time you worked in a team.,"I joined a struggling team of 5 and helped turn it around. I introduced code reviews, weekly retros, and pair programming. Within 3 months, delivery speed doubled and team morale improved significantly.",Excellente
+Describe a time you worked in a team.,"I coordinated a team of 6 across 3 time zones for a critical release. I set up async communication, documented decisions, and over-communicated during the final week. We shipped on time and the team remained motivated throughout.",Excellente
+Why are you leaving your current job?,I hate my boss,Mauvaise
+Why are you leaving your current job?,they suck,Mauvaise
+Why are you leaving your current job?,I don't know,Mauvaise
+Why are you leaving your current job?,money,Mauvaise
+Why are you leaving your current job?,I want more money.,Insuffisante
+Why are you leaving your current job?,I'm bored.,Insuffisante
+Why are you leaving your current job?,My job is bad.,Insuffisante
+Why are you leaving your current job?,I don't like the company.,Insuffisante
+Why are you leaving your current job?,I'm looking for new challenges.,Moyenne
+Why are you leaving your current job?,I want to grow professionally.,Moyenne
+Why are you leaving your current job?,I'm looking for better opportunities.,Moyenne
+Why are you leaving your current job?,I want to work with new technologies.,Moyenne
+Why are you leaving your current job?,"I've been in my current role for 3 years and I've learned a lot, but there's no room for growth. I'm looking for a role with more responsibility and technical challenges.",Bonne
+Why are you leaving your current job?,"My current company is great, but the tech stack is outdated. I want to work with modern technologies like Kubernetes and event-driven architecture.",Bonne
+Why are you leaving your current job?,"I want to work on larger-scale systems. My current role focuses on CRUD APIs, and I'm ready for bigger challenges involving distributed systems.",Bonne
+Why are you leaving your current job?,"I'm looking for a company whose mission I connect with and where I can grow both technically and as a leader. My current role has been a great learning experience, but the company is too small for the growth I want.",Bonne
+Why are you leaving your current job?,"After 3 great years at my current company, I've grown from junior to senior engineer. I'm now looking for a role where I can work on distributed systems and mentor a team. Your company's focus on scaling and innovation aligns perfectly with my career goals.",Excellente
+Why are you leaving your current job?,"My current company is stable and I'm grateful for the experience, but I've plateaued technically. I want to work with teams that push boundaries in event-driven architecture and cloud-native systems. Your engineering blog convinced me your team is on the cutting edge.",Excellente
+Why are you leaving your current job?,"I'm leaving for growth, not escape. My current role is great, but after 4 years I need new challenges. Specifically, I want to work on high-scale systems (100K+ req/s), lead technical initiatives, and grow into a staff engineer role. Your company offers exactly that path.",Excellente
+Why are you leaving your current job?,"My current company is pivoting away from backend infrastructure, which has been my specialty for 5 years. I'm looking for a role where I can deepen that expertise and lead architecture decisions. Your commitment to distributed systems aligns with my long-term direction.",Excellente
+How do you handle criticism?,I don't,Mauvaise
+How do you handle criticism?,I get angry,Mauvaise
+How do you handle criticism?,I ignore it,Mauvaise
+How do you handle criticism?,idk,Mauvaise
+How do you handle criticism?,I try to accept it.,Insuffisante
+How do you handle criticism?,I don't like it.,Insuffisante
+How do you handle criticism?,I stay calm.,Insuffisante
+How do you handle criticism?,I listen.,Insuffisante
+How do you handle criticism?,I listen carefully and try to improve.,Moyenne
+How do you handle criticism?,I consider it and decide if it's useful.,Moyenne
+How do you handle criticism?,I thank the person and take time to reflect.,Moyenne
+How do you handle criticism?,I try to see it as an opportunity to grow.,Moyenne
+How do you handle criticism?,"I listen, thank the person, and reflect before responding. When a teammate said my code was hard to review, I broke my PRs into smaller chunks, which improved our team's review speed.",Bonne
+How do you handle criticism?,"I separate the feedback from my identity. When my manager said my documentation was lacking, I created templates and now docs are one of my strengths.",Bonne
+How do you handle criticism?,"I ask clarifying questions to understand the feedback. During a code review, a senior engineer flagged my error handling. We discussed it, and I now write more robust code.",Bonne
+How do you handle criticism?,"I see feedback as data, not judgment. In my last performance review, I was told to communicate more proactively. I started weekly updates, and my manager noticed the improvement.",Bonne
+How do you handle criticism?,"I actively seek criticism because it accelerates my growth. When I asked a colleague for feedback on a design doc, they pointed out I hadn't considered failure modes. I now always include a 'what could go wrong' section, which has caught critical issues early.",Excellente
+How do you handle criticism?,"I separate 'what' from 'who'. Feedback is about the work, not me. I also acknowledge valid criticism publicly to model a culture of learning. My team has adopted this practice and it's made us stronger.",Excellente
+How do you handle criticism?,"I have a 'feedback journal' where I note recurring feedback. After 3 reviewers flagged my variable naming, I created a personal style guide. I now code faster and review better. I treat every critique as a chance to compound my skills.",Excellente
+How do you handle criticism?,"I respond quickly and thank the person, even when it stings. In a retro, a teammate said I interrupted too often. I worked with a coach and now I pause before speaking. This change improved my collaboration significantly.",Excellente
