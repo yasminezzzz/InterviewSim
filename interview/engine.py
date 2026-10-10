@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Moteur d'entretien RH : pose les questions, note les réponses."""
+"""Moteur d'entretien RH : 5 standard + N aléatoires."""
 
 import random
 import time
@@ -9,41 +9,51 @@ from interview.evaluator import evaluate_answer
 
 
 class RHInterviewEngine:
-    """Pose des questions RH (5 standard + N aléatoires) et note les réponses."""
-
     def __init__(self, profile, df=None, n_standard=5, n_random=0):
         self.profile = profile
-        self.df = df  # dataframe pandas (facultatif pour l'instant)
+        self.df = None
         self.n_standard = n_standard
         self.n_random = n_random
         self.history = []
         self.asked_std = set()
         self.asked_rand = set()
         self.start_time = time.time()
+        self._current_question = None
+
+        if df is None and n_random > 0:
+            try:
+                from interview.datasets import load_questions_for_profile
+                df = load_questions_for_profile(profile)
+            except Exception as e:
+                print(f"⚠️ Dataset indisponible : {e}")
+
+        if df is not None:
+            self.df = df
 
     def get_next_question(self):
-        """Retourne la prochaine question, ou None si l'entretien est fini."""
-        # 1) Questions standard
+        if self._current_question is not None:
+            return self._current_question
+
         if len(self.asked_std) < self.n_standard:
             std = [q for q in STANDARD_RH_QUESTIONS if q["id"] not in self.asked_std]
             if std:
                 q = std[0]
                 self.asked_std.add(q["id"])
-                return {**q, "type": "standard"}
+                self._current_question = {**q, "type": "standard"}
+                return self._current_question
 
-        # 2) Questions aléatoires (si un dataframe est fourni)
         if self.df is not None and len(self.asked_rand) < self.n_random:
             candidates = self.df[~self.df.index.isin(self.asked_rand)]
             if len(candidates) > 0:
                 idx = random.choice(candidates.index)
                 self.asked_rand.add(idx)
                 q = self.df.loc[idx].to_dict()
-                return {**q, "type": "random"}
+                self._current_question = {**q, "type": "random"}
+                return self._current_question
 
         return None
 
     def submit_answer(self, question, answer):
-        """Évalue une réponse et l'ajoute à l'historique."""
         q_formatted = {
             "ideal_answer": question.get("ideal_answer") or question.get("expected_answer", ""),
             "keywords": question.get("keywords", []),
@@ -52,14 +62,15 @@ class RHInterviewEngine:
         ev = evaluate_answer(q_formatted, answer)
         self.history.append({
             "question": question["question"],
+            "question_full": question,
             "answer": answer,
             "evaluation": ev,
             "type": question.get("type", "standard"),
         })
+        self._current_question = None
         return ev
 
     def get_report(self):
-        """Rapport final : score global + décision."""
         if not self.history:
             return {"score": 0, "decision": "REJETÉ", "num_questions": 0}
 
@@ -77,3 +88,12 @@ class RHInterviewEngine:
             "num_questions": len(self.history),
             "decision": "PASSER AU CTO" if avg >= 0.5 else "REJETÉ",
         }
+
+
+if __name__ == "__main__":
+    print("✅ engine OK")
+    engine = RHInterviewEngine(profile="Software Engineer", n_standard=5, n_random=0)
+    q = engine.get_next_question()
+    print(f"Q1 : {q['question']}")
+    ev = engine.submit_answer(q, "I'm a software engineer with 3 years of experience.")
+    print(f"Score : {ev['score']} ({ev['quality']})")

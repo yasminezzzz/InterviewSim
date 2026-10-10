@@ -1,6 +1,36 @@
-﻿.venv/
-.env
+﻿# Environnements virtuels
+venv/
+.venv/
+env/
+ENV/
+
+# Python
 __pycache__/
 *.pyc
-*.parquet
+*.pyo
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# Config locale
+.env
+
+# Datasets bruts (gros fichiers)
 data/raw/
+data/processed/
+
+# Anciens fichiers
+archive/
+
+# Modèles (gros fichiers — à uploader sur Hugging Face)
+models/
+
+# Fichiers audio temporaires
+voice/*.mp3
+voice/*.wav
+api/audio/
+test.mp3
+test_voice.mp3
+*.webm

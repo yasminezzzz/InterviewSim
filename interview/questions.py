@@ -1,81 +1,46 @@
 # -*- coding: utf-8 -*-
-"""Questions RH standard + fiches de poste."""
+"""Questions RH — chargées depuis data/hr_questions.csv."""
 
-STANDARD_RH_QUESTIONS = [
-    {
-        "id": "STD-RH-001",
-        "question": "Tell me about yourself.",
-        "ideal_answer": "Hi, I'm [Name]. I'm a software engineer with X years of experience specializing in [skills]. I've worked on [projects] where I [achievement]. I'm passionate about [domain].",
-        "keywords": ["experience", "development", "backend", "Java", "Spring Boot"],
-        "elements": {
-            "nom": ["i'm", "my name", "i am"],
-            "poste": ["software engineer", "developer", "analyst"],
-            "experience": ["years of experience", "worked", "experience in"],
-            "competences": ["java", "python", "spring", "sql"],
-            "realisation": ["worked on", "achieved", "improved", "optimized"],
-            "motivation": ["looking for", "passionate", "want", "goal"]
-        },
-        "weight": 0.20,
-    },
-    {
-        "id": "STD-RH-002",
-        "question": "Why are you interested in this position?",
-        "ideal_answer": "It matches my skills in [domain] and I admire [company]. I want to contribute to [project].",
-        "keywords": ["skills", "company", "projects"],
-        "elements": {
-            "entreprise": ["company", "your team", "your projects"],
-            "poste": ["position", "role", "job"],
-            "competences": ["skills", "match", "fit"],
-            "motivation": ["excited", "interested", "passionate"],
-            "projet": ["contribute", "grow", "learn"]
-        },
-        "weight": 0.20,
-    },
-    {
-        "id": "STD-RH-003",
-        "question": "What is your biggest technical challenge?",
-        "ideal_answer": "My biggest challenge was [problem]. I analyzed [approach] and achieved [result].",
-        "keywords": ["challenge", "problem", "solution", "result"],
-        "elements": {
-            "contexte": ["project", "team", "application"],
-            "probleme": ["problem", "issue", "challenge"],
-            "action": ["analyzed", "implemented", "solved"],
-            "resultat": ["reduced", "improved", "achieved"],
-            "apprentissage": ["learned", "realized", "understood"]
-        },
-        "weight": 0.20,
-    },
-    {
-        "id": "STD-RH-004",
-        "question": "How do you handle disagreements with colleagues?",
-        "ideal_answer": "I listen first, then we find a compromise together.",
-        "keywords": ["listen", "perspective", "solution", "together"],
-        "elements": {
-            "ecoute": ["listen", "understand", "hear"],
-            "dialogue": ["discuss", "talk", "communicate"],
-            "compromis": ["compromise", "agree", "find"],
-            "solution": ["solution", "resolve", "fix"],
-            "respect": ["respect", "professional", "calm"]
-        },
-        "weight": 0.20,
-    },
-    {
-        "id": "STD-RH-005",
-        "question": "Where do you see yourself in 3 years?",
-        "ideal_answer": "As a [role] having developed [skills].",
-        "keywords": ["tech lead", "mentoring", "architecture", "grow"],
-        "elements": {
-            "objectif": ["senior", "lead", "expert", "manager"],
-            "competences": ["skills", "learn", "develop"],
-            "entreprise": ["company", "here", "your team"],
-            "plan": ["plan", "path", "step"],
-            "motivation": ["passionate", "want", "goal"]
-        },
-        "weight": 0.20,
-    },
-]
+import csv
+import json
+from pathlib import Path
+
+CSV_PATH = Path(__file__).resolve().parents[1] / "data" / "hr_questions.csv"
 
 
+def load_questions():
+    """Charge les questions RH depuis le CSV."""
+    if not CSV_PATH.exists():
+        raise FileNotFoundError(
+            f"Fichier introuvable : {CSV_PATH}\n"
+            f"Lance d'abord : python scripts\\build_hr_csv.py"
+        )
+
+    questions = []
+    with open(CSV_PATH, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            q = {
+                "id": row["id"],
+                "question": row["question"],
+                "ideal_answer": row["ideal_answer"],
+                "keywords": row["keywords"].split("|") if row["keywords"] else [],
+                "elements": json.loads(row["elements"]) if row["elements"] else {},
+                "expected_duration": int(row["expected_duration"]),
+                "weight": float(row["weight"]),
+                "type": "standard",
+            }
+            questions.append(q)
+    return questions
+
+
+# Chargé à l'import
+RH_QUESTIONS = load_questions()
+
+# Compatibilité avec l'ancien nom utilisé par engine.py
+STANDARD_RH_QUESTIONS = RH_QUESTIONS
+
+# Fiches de poste
 job_descriptions = {
     "Software Engineer": "Java, Python, OOP, Spring Boot, REST APIs, SQL, Git",
     "Data Scientist": "Python, ML, Deep Learning, Statistics, SQL, TensorFlow, PyTorch",
@@ -84,7 +49,6 @@ job_descriptions = {
 
 
 if __name__ == "__main__":
-    print(f"{len(STANDARD_RH_QUESTIONS)} questions chargees.")
-    for q in STANDARD_RH_QUESTIONS:
-        print(f"  {q['id']} - {q['question']}")
-    print(f"{len(job_descriptions)} profils charges : {list(job_descriptions.keys())}")
+    print(f"✅ {len(RH_QUESTIONS)} questions chargées.")
+    for q in RH_QUESTIONS:
+        print(f"   [{q['id']}] {q['question']}")
